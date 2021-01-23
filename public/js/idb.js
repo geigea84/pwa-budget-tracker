@@ -84,5 +84,11 @@ function uploadTransaction() {
     };
 }
 
+function testOnline() {
+    console.log("You're online!");
+    alert("You're online!");
+}
+
 //listen for app coming back online
-window.addEventListener("online", uploadTransaction)
+window.addEventListener("online", uploadTransaction);
+window.addEventListener("online", testOnline);
