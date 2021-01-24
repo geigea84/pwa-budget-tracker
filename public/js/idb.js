@@ -38,8 +38,6 @@ function saveRecord(record) {
     //access the object store for "new_transaction" aka nt
     const ntObjectStore = transaction.objectStore("new_transaction");
 
-    console.log(record);
-
     //add record to object store with add method
     ntObjectStore.add(record);
 }
@@ -66,7 +64,6 @@ function uploadTransaction() {
                 }
             })
             .then(response => {
-                console.log(response);
                 return response.json();
             })
             .then(serverResponse => {
@@ -89,11 +86,5 @@ function uploadTransaction() {
     };
 }
 
-function testOnline() {
-    console.log("You're online!");
-    alert("You're online!");
-}
-
 //listen for app coming back online
 window.addEventListener("online", uploadTransaction);
-window.addEventListener("online", testOnline);
