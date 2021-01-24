@@ -38,6 +38,8 @@ function saveRecord(record) {
     //access the object store for "new_transaction" aka nt
     const ntObjectStore = transaction.objectStore("new_transaction");
 
+    console.log(record);
+
     //add record to object store with add method
     ntObjectStore.add(record);
 }
@@ -63,7 +65,10 @@ function uploadTransaction() {
                     "Content-Type": "application/json"
                 }
             })
-            .then(response => response.json())
+            .then(response => {
+                console.log(response);
+                return response.json();
+            })
             .then(serverResponse => {
                 if (serverResponse.message) {
                     throw new Error(serverResponse);
