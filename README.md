@@ -1,5 +1,14 @@
 # pwa-budget-tracker
 
+The focus of this project was to add offline capabilties to the budget tracker.
+
+When offline, the tracker can still be accessed via the cached files, and all transactions are saved to IndexedDB.
+
+When once again online, the tracker can now take all the transactions saved to IndexedDB and submit them to MongoDB.
+
+Link to deployed application:
+https://floating-hollows-68621.herokuapp.com/
+
 AS AN avid traveler
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
@@ -40,5 +49,3 @@ In the module project, you used webpack to create the manifest.json file. For th
 
 
 Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
-
-==================================================
