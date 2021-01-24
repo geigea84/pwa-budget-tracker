@@ -41,3 +41,4 @@ In the module project, you used webpack to create the manifest.json file. For th
 
 Finally, the budget tracker has a server and uses MongoDB as its database, so you’ll need to deploy this application to Heroku using MongoDB Atlas. To review this process, look at Module 18: NoSQL, Lesson 5: Add Mongoose Validation, specifically 18.5.5: Deploy to Heroku.
 
+==================================================
