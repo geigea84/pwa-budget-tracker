@@ -9,6 +9,8 @@ When once again online, the tracker can now take all the transactions saved to I
 Link to deployed application:
 https://floating-hollows-68621.herokuapp.com/
 
+![screenshot](./zscreenshot.png)
+
 AS AN avid traveler
 I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
 SO THAT my account balance is accurate when I am traveling
